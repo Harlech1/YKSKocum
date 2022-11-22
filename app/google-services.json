@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "849094122464-r5ek946pm1tl1ddcvb1vg0bo4151siit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.turkerkizilcik.ykskocum",
+            "certificate_hash": "4435352d20bf417fa43eab1b7fe106d8ffc7bcc9"
+          }
+        },
+        {
           "client_id": "849094122464-5l0nh8v9qev1kr4k4m4mh5pq5gcvjmhs.apps.googleusercontent.com",
           "client_type": 3
         }
