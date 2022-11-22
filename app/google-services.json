@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "849094122464",
+    "project_id": "ykskocum-7ba62",
+    "storage_bucket": "ykskocum-7ba62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849094122464:android:7ca23fd167a3ce56916985",
+        "android_client_info": {
+          "package_name": "com.turkerkizilcik.ykskocum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849094122464-5l0nh8v9qev1kr4k4m4mh5pq5gcvjmhs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBix_WnZPW2sDPvtFie05a9xc-98OSFgoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849094122464-5l0nh8v9qev1kr4k4m4mh5pq5gcvjmhs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
