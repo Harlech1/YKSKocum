@@ -1,0 +1,3 @@
+# YKSKocum
+
+ben türker çalmayın
