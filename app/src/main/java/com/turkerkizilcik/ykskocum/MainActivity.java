@@ -22,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+
+        FirebaseUser user = mAuth.getCurrentUser();
+
+        if(user==null){
+            Intent intent = new Intent(getApplicationContext(),SignUpActivity.class);
+            startActivity(intent);
+        }
+
     }
 
     @Override
@@ -30,22 +38,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mainscreen);
 
         mAuth = FirebaseAuth.getInstance();
-        FirebaseUser user = mAuth.getCurrentUser();
+
+
 
         sharedPreferences = this.getSharedPreferences("com.turkerkizilcik.ykskocum", Context.MODE_PRIVATE);
 
         int pastOrNo = sharedPreferences.getInt("x" , 0);
 
         if(pastOrNo == 1) {
-            if (user == null) {
-                Intent intent = new Intent(getApplicationContext(),SignUpActivity.class);
-                startActivity(intent);
-            }
+           // if () {
+
+           // }
         } else {
             Intent intent = new Intent(MainActivity.this, OnboardingActivity.class);
             startActivity(intent);
             System.out.println("seks");
         }
+
+
+
+
+
     }
 
+    
 }
