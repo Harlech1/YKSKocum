@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph"
+    app:startDestination="@id/googleFragment">
+
+    <fragment
+        android:id="@+id/googleFragment"
+        android:name="com.turkerkizilcik.ykskocum.GoogleFragment"
+        android:label="fragment_google"
+        tools:layout="@layout/fragment_google">
+        <action
+            android:id="@+id/action_blankFragment_to_nameFragment"
+            app:destination="@id/nameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.turkerkizilcik.ykskocum.NameFragment"
+        android:label="fragment_name"
+        tools:layout="@layout/fragment_name" >
+        <action
+            android:id="@+id/action_nameFragment_to_googleFragment"
+            app:destination="@id/googleFragment" />
+        <action
+            android:id="@+id/action_nameFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.turkerkizilcik.ykskocum.MainActivity"
+        android:label="activity_mainscreen"
+        tools:layout="@layout/activity_mainscreen" />
+</navigation>
